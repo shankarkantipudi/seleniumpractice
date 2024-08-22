@@ -1,0 +1,16 @@
+//Absolute xpath
+		   /*its a complete path where it contains all tags
+		    example: /html/body/header/div/div/div[2]/div/input 
+		     -it will start from html and ends with element*/
+		
+		//relative xpath or partial xpath
+		
+		/*example://*[@id="search"]/input   
+		 * we will prefer more because the nodes may change in absolute xpath but coming to relative xpath it will related and very close to element
+		 * difference between absolute and relative xpath
+		 * 1. absolute xpath  starts with single slash (/)
+		 *   relative xpath starts with double slash(//)  
+		 * 2. absolute xpath do not use attributes
+		 *   relative xpath uses attributes 
+		 * 3. absolute xpath traverse through each node till it finds element
+		 *   relative xpath directly jumps and find element by using attribute */
