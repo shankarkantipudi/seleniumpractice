@@ -14,4 +14,5 @@
 		 *   relative xpath uses attributes 
 		 * 3. absolute xpath traverse through each node till it finds element
 		 *   relative xpath directly jumps and find element by using attribute */
+         summaryofxpath
                  Syntax: //tagname[@attribute='value'] or //tagname[@attribute=/"value"/]
