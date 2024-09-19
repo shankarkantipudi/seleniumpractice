@@ -1,0 +1,9 @@
+Alerts:
+Three types of Alerts
+1.NormalAlert
+2.ConfirmationAlert
+3.PromptingAlert
+remember:
+Alert windows are not webelements
+inside the Alert windows nothing is webElement(we cannot inspect them)
+
