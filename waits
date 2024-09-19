@@ -1,0 +1,7 @@
+Types of waits
+1.implicit Wait
+2.Explicit wait
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		WebDriverWait mywait =new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebElement username=mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='Username']")));
+	

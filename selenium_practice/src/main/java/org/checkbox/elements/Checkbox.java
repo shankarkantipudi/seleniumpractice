@@ -9,11 +9,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Checkbox {
+
 	static WebDriver driver = new ChromeDriver();
     
 	public void launchURL() {
 		driver.manage().window().maximize();
+
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+	WebDriver driver = new ChromeDriver();
+	public void launchURL() {
+		driver.manage().window().maximize();
+
 		String url = "https://testautomationpractice.blogspot.com/";
 		driver.get(url);
 
