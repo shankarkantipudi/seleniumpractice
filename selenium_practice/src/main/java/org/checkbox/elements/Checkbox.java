@@ -1,5 +1,4 @@
 package org.checkbox.elements;
-
 import java.time.Duration;
 import java.util.List;
 
@@ -9,11 +8,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Checkbox {
+
 	static WebDriver driver = new ChromeDriver();
     
 	public void launchURL() {
 		driver.manage().window().maximize();
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	WebDriver driver = new ChromeDriver();
+	public void launchURL() {
+		driver.manage().window().maximize();
 		String url = "https://testautomationpractice.blogspot.com/";
 		driver.get(url);
 
@@ -32,7 +34,6 @@ public class Checkbox {
 
 		}
 	}
-
 	public void SpclSelectCheckBoxes() {
 		List<WebElement> checkboxs = driver
 				.findElements(By.xpath("//input[@class='form-check-input' and @type='checkbox']"));
@@ -63,7 +64,6 @@ public class Checkbox {
 	}
 		
 	}
-
 	public void closeBrowser() {
 		driver.close();
 	}

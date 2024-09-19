@@ -13,13 +13,6 @@ public class CheckBoxRunable {
 		cb.SpclSelectCheckBoxes();
 		cb.selectFirstThreeCheckBoxes();
 		cb.unselectCheckBoxes();
-		cb.closeBrowser();
-		
 	}
-	
-	
-	
-	
-	
-
+		
 }
