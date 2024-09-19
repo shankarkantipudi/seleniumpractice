@@ -5,18 +5,14 @@ import org.testng.annotations.Test;
 @Test
 public class CheckBoxRunable {
 	
-	public void CheckRun() {
+	public void CheckRun() throws InterruptedException {
 		Checkbox cb= new Checkbox();
 		cb.launchURL();
-		//cb.handleSingleCheckBox();
+		cb.handleSingleCheckBox();
 		cb.handleMultipleCheckBoxes();
-		cb.closeBrowser();
-		
+		cb.SpclSelectCheckBoxes();
+		cb.selectFirstThreeCheckBoxes();
+		cb.unselectCheckBoxes();
 	}
-	
-	
-	
-	
-	
-
+		
 }
