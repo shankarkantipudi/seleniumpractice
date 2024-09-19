@@ -6,4 +6,9 @@ Three types of Alerts
 remember:
 Alert windows are not webelements
 inside the Alert windows nothing is webElement(we cannot inspect them)
-
+Syntax:
+Alert alert= driver.switchTo().alert();
+alert.accept();
+alert.dismiss;
+alert.getText();
+alert.sendkeys(text);
