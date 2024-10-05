@@ -39,10 +39,12 @@ public class NewTabWindowHandle {
 			}
 
 		}
+
 		driver.switchTo().window(parentwindowhandle);
 		System.out.println("in parent window");
 		WebElement ptextbox = driver.findElement(By.xpath("//input[@id='name']"));
 		ptextbox.sendKeys("sai");
 		driver.quit();
+
 	}
 }
