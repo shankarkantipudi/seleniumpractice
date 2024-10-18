@@ -20,14 +20,17 @@ public class AutoSuggestiveDropDowns {
 		driver.get(url);
 		WebElement searchBox = driver.findElement(By.name("q"));
 		searchBox.sendKeys("MumbaiIndians");
-		List<WebElement> options=driver.findElements(By.xpath("//div[@class='wM6W7d' and @role='presentation']"));
-		int count=options.size();
+		List<WebElement> options = driver.findElements(By.xpath("//div[@class='wM6W7d' and @role='presentation']"));
+		int count = options.size();
 		System.out.println(count);
-		for(WebElement option:options) {
+		for (WebElement option : options) {
 			System.out.println(option.getText());
-			
-		}
+			if (option.getText().equalsIgnoreCase("Mumbai Indians")) {
+				option.click();
+			}
 
+		}
+		driver.close();
 	}
 
 }
