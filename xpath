@@ -1,0 +1,13 @@
+Xpath 
+==========================
+           -ancestor
+1.Ancestor -|
+           -ancestor-or-self
+                 -Descendant
+2.Descendant -|
+                 - Descendant-or-self
+            -preceding-sibling
+3.sibling -|
+            -following-sibling
+4.Parent
+5.child
